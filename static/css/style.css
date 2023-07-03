@@ -41,6 +41,8 @@ p {
     text-shadow: 0 0 7px purple, 0 0 10px purple, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff;
 }
 
+
+
 /* --------------------------------- NavBar ---------------------- */
 
 .nav-bar {
@@ -288,7 +290,7 @@ p {
 /* ############################# Dark Mode ############################# */
 
 .dark-mode .profile-img img {
-  border: 3px solid #ca69fa;  
+    border: 3px solid #ca69fa;  
 }
 
 .dark-mode .profile-img img:hover {
@@ -304,8 +306,8 @@ p {
 }
 
 
-/* -------------------------- Experience Section -------------------------- */
 
+/* -------------------------- Experience Section -------------------------- */
 
 .skill-item {
     font-family: 'Work Sans', sans-serif;
@@ -357,7 +359,7 @@ p {
 /* ############################# Dark Mode ############################# */
 
 .dark-mode .skill-item:hover .star-rating i {
-  color: #ca69fa;
+    color: #ca69fa;
 }
 
 .dark-mode .skill-item:hover {
@@ -378,7 +380,7 @@ p {
 }
 
 .dark-mode .skill-item img {
-  background-color: #ececec;
+    background-color: #ececec;
 }
 
 .dark-mode .experience {
@@ -469,9 +471,9 @@ p {
 /* ############################# Dark Mode ############################# */
 
 .dark-mode .card {
-  border: 2px solid #ca69fa !important;
-  background-color: rgba(0, 0, 0, 0.6) !important;
-  box-shadow: rgb(255, 255, 255) 5px 5px 20px;
+    border: 2px solid #ca69fa !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    box-shadow: rgb(255, 255, 255) 5px 5px 20px;
 }
 
 .dark-mode .card:hover{
@@ -547,6 +549,8 @@ p {
     text-shadow: 0 0 7px purple, 0 0 10px purple, 0 0 21px #fff;
 }
 
+
+
 /* -------------------------- Footer -------------------------- */
 
 footer {
@@ -569,7 +573,7 @@ footer {
 }
 
 .footer-logo img {
-  filter: invert(1);
+    filter: invert(1);
 }
 
 /* ############################# Dark Mode ############################# */
@@ -593,6 +597,7 @@ footer {
 .dark-mode .footer-logo img {
     filter: brightness(5);
 }
+
 
 
 /* ########################################################################### */
