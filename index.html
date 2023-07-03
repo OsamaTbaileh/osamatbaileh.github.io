@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osama Tbaileh</title>
+    <link rel="icon" type="image/x-icon" href="static/images/logo.png">
+
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NavBar -->
+<header class="container nav-bar ">
+    <div class="row mx-1 d-flex justify-content-center align-items-center">
+        <div class="col-5 nav-icons py-1">
+            <a href="#logo" class="icon-circle m-0" ><i class="fa-solid fa-house fa-lg"></i></a>
+            <a href="#profile" class="icon-circle m-0"><i class="fas fa-user fa-lg"></i></a>
+            <a href="#experience" class="icon-circle m-0"><i class="fas fa-briefcase fa-lg"></i></a>
+            <a href="#projects" class="icon-circle m-0"><i class="fas fa-folder-open fa-lg"></i></a>
+            <a href="#contact" class="icon-circle m-0"><i class="fas fa-envelope fa-lg"></i></a>
+            <div class="toggle-slider">
+                <input type="checkbox" id="dark-mode-toggle" class="toggle-slider-checkbox">
+                <label for="dark-mode-toggle" class="toggle-slider-label d-flex align-items-center justify-content-around">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Logo & Slogan -->
+<div id="logo" class="logo position-relative">
+    <video autoplay loop muted class="video-background dark-video">
+        <source src="static/videos/logo-bg-dark.mp4" type="video/mp4">
+    </video>
+    <video autoplay loop muted class="video-background light-video">
+        <source src="static/videos/logo-bg-light.mp4" type="video/mp4">
+    </video>
+    <div class="d-flex flex-column justify-content-center side-icons-bar">
+        <a href="https://github.com/OsamaTbaileh/OsamaTbaileh" target="_blank" class="logo-side-icon p-1 rounded text-center mb-2">
+            <i class="fab fa-github fa-xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/osamatbaileh" target="_blank" class="logo-side-icon p-1 rounded text-center mb-2">
+            <i class="fab fa-linkedin fa-xl"></i>
+        </a>
+        <a href="mailto:osama.tb02@gmail.com" class="logo-side-icon p-1 rounded text-center mb-2">
+            <i class="far fa-envelope fa-xl"></i>
+        </a>
+    </div>
+    <div class="logo-content mx-3">
+        <img class="centered-img img-fluid p-3" src="static/images/logo.png" width="430" alt="Osama Tbaileh Logo">
+        <h1 class="text-center my-3">Osama Tbaileh</h1>
+        <h3 class="text-center mb-5">Full-Stack Developer</h3>
+        <a href="#####" download>
+            <button type="button" class="golden-button glow-button">Download CV</button>
+        </a>
+    </div>
+</div>
+
+
+<!-- Profile Section -->
+<div id="profile" class="profile text-center my-4 mx-3">
+    <h1 class="section-header">About me</h1>
+    <p class="header-quote">
+        I'm a creative Full-Stack Developer
+    </p>
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-3 my-2 profile-img">
+            <img src="static/images/OsamaTbaileh.png" width="300" alt="Osama Tbaileh image" class="rounded-circle img-fluid">
+        </div>
+        <div class="col-md-5 my-2">
+            <p class="text-center">
+                Passionate Full-Stack Developer
+                eager to broaden my expertise,
+                collaborate with like-minded professionals,
+                and push the boundaries of my skills.
+                I thrive on embracing new challenges,
+                unraveling complex coding problems,
+                and continuously refining my knowledge.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Experience Section -->
+<div id="experience" class="experience text-center py-4">
+    <h1 class="mb-4 section-header">My Experiences</h1>
+    <p class="header-quote">
+        "The expert in anything was once a beginner." 
+        <br>
+        - Helen Hayes
+    </p>
+    <div class="row d-flex justify-content-center align-items-start mx-4">
+        <div class="col-md-5 mx-2 my-3 p-3 skills-section ">
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/>  
+                    <span class="skill-name">Python</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="Java-logo"/>
+                    <span class="skill-name">Java</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>            
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/color/48/django.png" alt="django"/>
+                    <span class="skill-name">Django</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/ios/48/flask.png" alt="flask"/>
+                    <span class="skill-name">Flask</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/color/48/spring-logo.png" alt="Spring-logo"/>
+                    <span class="skill-name">Spring Boot</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/color/48/react-native.png" alt="React-logo"/>  
+                    <span class="skill-name">React</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" class="m-1" width="30" height="30" src="https://img.icons8.com/fluency/48/node-js.png" alt="Node-js-logo"/>  
+                    <span class="skill-name">Node.js</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/ios/48/express-js.png" alt="Express-js-logo"/>  
+                    <span class="skill-name">Express</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+        </div>
+        <div class="col-md-5 mx-2 my-3 p-3 skills-section">
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/color/48/mysql-logo.png" alt="mysql-logo"/>  
+                    <span class="skill-name">MySQL</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="MongoDB-logo"/> 
+                    <span class="skill-name">MongoDB</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/color/48/mongoose.png" alt="Mongoose-logo"/>  
+                    <span class="skill-name">Mongoose</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="static/images/axios.png" alt="Axios"/>  
+                    <span class="skill-name">Axios</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="static/images/postman.png" alt="postman-api"/>  
+                    <span class="skill-name">Postman</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>  
+                    <span class="skill-name">HTML5</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>  
+                    <span class="skill-name">CSS</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="4">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/color/48/bootstrap.png" alt="bootstrap"/>  
+                    <span class="skill-name">Bootstrap</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+            <div class="skill-item d-flex justify-content-between align-items-center mb-2" data-rating="3">
+                <div>
+                    <img class="m-1" width="30" height="30" src="https://img.icons8.com/color/48/material-ui.png" alt="material-ui"/>  
+                    <span class="skill-name">Material-UI</span>
+                </div>
+                <span class="star-rating"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Projects Section -->
+<div id="projects" class="projects text-center py-4">
+    <h1 class="mb-4 section-header">My Projects</h1>
+    <p class="header-quote">
+        "Believe you can and you're halfway there."
+        <br>
+        - Theodore Roosevelt
+    </p>
+    <div class="row d-flex justify-content-center align-items-center mx-4">
+        <div class="col-lg-5 mx-2 my-3 p-3">
+            <div class="card rounded-5 position-relative">
+                <div class="card-background d-flex justify-content-center">
+                    <a href="https://github.com/OsamaTbaileh/PrimeInventory" target="_blank" class="new-window-icon position-absolute">
+                        <i class="fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <img src="static/images/PrimeInventory.png" class="card-img-top rounded-5" alt="Prime Inventory.">
+                    <h5 class="card-title position-absolute">Prime Inventory</h5>
+                </div>
+                <div class="card-img-overlay d-flex flex-column justify-content-around rounded-5">
+                    <h4 class="card-title mt-3">Prime Inventory</h4>
+                    <p class="card-text">
+                        This web application helps store managers efficiently manage multiple warehouses 
+                        by tracking product movement and optimizing inventory management.
+                    </p>
+                    <div class="row">
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1-logo"/>  
+                            <span class="skill-name text-nowrap">Python</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/ios/48/flask.png" alt="flask-logo"/>
+                            <span class="skill-name text-nowrap">Flask</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="static/images/jinja.png" alt="jinja-logo"/>  
+                            <span class="skill-name text-nowrap">Jinja2</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/bootstrap.png" alt="bootstrap"/>  
+                            <span class="skill-name text-nowrap">Bootstrap</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/mysql-logo.png" alt="mysql-logo"/>  
+                            <span class="skill-name text-nowrap">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 mx-2 my-3 p-3">
+            <div class="card rounded-5 position-relative">
+                <div class="card-background d-flex justify-content-center">
+                    <a href="https://github.com/anani92/MetaStore" target="_blank" class="new-window-icon position-absolute">
+                        <i class="fa-brands fa-github fa-xl"></i>
+                    </a>                    
+                    <img src="static/images/MetaMarket.png" class="card-img-top rounded-5" alt="Meta Market.">
+                    <h5 class="card-title position-absolute">Meta Market</h5>
+                </div>
+                <div class="card-img-overlay d-flex flex-column justify-content-around rounded-5">
+                    <h4 class="card-title mt-3">Meta Market</h4>
+                    <p class="card-text">
+                        Meta Store is an E-Commerce website where sellers have accounts to offer their 
+                        goods and people have different types of accounts so they can shop through the website.
+                    </p>
+                    <div class="row">
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1-logo"/>  
+                            <span class="skill-name text-nowrap">Python</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/django.png" alt="flask-logo"/>
+                            <span class="skill-name text-nowrap">Django</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="static/images/jinja.png" alt="jinja-logo"/>  
+                            <span class="skill-name text-nowrap">Jinja2</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/bootstrap.png" alt="bootstrap-logo"/>  
+                            <span class="skill-name text-nowrap">Bootstrap</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/mysql-logo.png" alt="mysql-logo"/>  
+                            <span class="skill-name text-nowrap">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 mx-2 my-3 p-3">
+            <div class="card rounded-5 position-relative">
+                <div class="card-background d-flex justify-content-center">
+                    <a href="https://github.com/HasanMohammadSadaqa/Clinica" target="_blank" class="new-window-icon position-absolute">
+                        <i class="fa-brands fa-github fa-xl"></i>
+                    </a>                    
+                    <img src="static/images/Clinica.png" class="card-img-top rounded-5" alt="Clinica.">
+                    <h5 class="card-title position-absolute">Clinica</h5>
+                </div>
+                <div class="card-img-overlay d-flex flex-column justify-content-around rounded-5">
+                    <h4 class="card-title mt-3">Clinica</h4>
+                    <p class="card-text">
+                        The idea was to build a doctor's website for patients to manage appointments, schedule visits, 
+                        and receive guidance, enhancing appointment management and patient-doctor interaction.
+                    </p>
+                    <div class="row">
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/react-native.png" alt="React-logo"/>  
+                            <span class="skill-name text-nowrap">React</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/ios/48/express-js.png" alt="Express-js-logo"/>  
+                            <span class="skill-name text-nowrap">Express</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/fluency/48/node-js.png" alt="Node-js-logo"/>  
+                            <span class="skill-name text-nowrap">Node.js</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="MongoDB-logo"/> 
+                            <span class="skill-name text-nowrap">MongoDB</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/mongoose.png" alt="Mongoose-logo"/>  
+                            <span class="skill-name text-nowrap">Mongoose</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/material-ui.png" alt="material-ui-logo"/>
+                            <span class="skill-name text-nowrap">Material-UI</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="static/images/axios.png" alt="Axios-logo"/>  
+                            <span class="skill-name text-nowrap">Axios</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 mx-2 my-3 p-3">
+            <div class="card rounded-5 position-relative">
+                <div class="card-background d-flex justify-content-center">
+                    <a href="https://github.com/mutasemsiam/java_project" target="_blank" class="new-window-icon position-absolute">
+                        <i class="fa-brands fa-github fa-xl"></i>
+                    </a>                    
+                    <img src="static/images/PalTech.png" class="card-img-top rounded-5" alt="PalTech.">
+                    <h5 class="card-title position-absolute">PalTech</h5>
+                </div>
+                <div class="card-img-overlay d-flex flex-column justify-content-around rounded-5">
+                    <h4 class="card-title mt-3">PalTech</h4>
+                    <p class="card-text">
+                        PalTech connects users with skilled workers such as bricklayers, plumbers, carpenters, 
+                        etc. Users can create accounts to search, compare, and hire workers for their needs.
+                    </p>
+                    <div class="row">
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="Java-logo"/>  
+                            <span class="skill-name text-nowrap">Java</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/spring-logo.png" alt="Spring-logo"/>
+                            <span class="skill-name text-nowrap">Spring Boot</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/metro/48/jsp.png" alt="JSP-logo"/>
+                            <span class="skill-name text-nowrap">JSP</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/bootstrap.png" alt="bootstrap-logo"/>  
+                            <span class="skill-name text-nowrap">Bootstrap</span>
+                        </div>
+                        <div class="col mt-1 d-flex flex-column align-items-center justify-content-center">
+                            <img class="m-1 p-1 bg-light rounded-circle" width="37" height="37" src="https://img.icons8.com/color/48/mysql-logo.png" alt="mysql-logo"/>  
+                            <span class="skill-name text-nowrap">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact Section -->
+<div id="contact" class="contact text-center pt-4">
+    <h1 class="mb-4 section-header">Contact Me</h1>
+    <p class="header-quote">
+        “If I had asked people what they wanted, they would have said faster horses. ”
+        <br>
+        - Henry Ford
+    </p>
+    <div class="row d-flex justify-content-center align-items-center mx-5">
+        <div class="col-lg-7 mx-2 my-3 p-3">
+            <div class="row justify-content-around">
+                <a href="mailto:osama.tb02@gmail.com" target="_blank" class="contact-card col-sm-5 mb-5 p-2 rounded-5">
+                    <i class="far fa-envelope fa-2x"></i>
+                    <p>Gmail</p>
+                    <p>osama.tb02@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/osamatbaileh" target="_blank" class="contact-card col-sm-5 mb-5 p-2 rounded-5">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                    <p>LinkedIn</p>
+                    <p>Osama Tbaileh</p>
+                </a>
+                <a href="https://wa.me/+972595766453" target="_blank" class="contact-card col-sm-5 mb-5 p-2 rounded-5">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                    <p>WhatsApp</p>
+                    <p>+970595766453</p>
+                </a>
+                <a href="https://discord.com/channels/OsamaTbaileh#4499" target="_blank" class="contact-card col-sm-5 mb-5 p-2 rounded-5">
+                    <i class="fab fa-discord fa-2x display-block"></i>
+                    <p>Discord</p>
+                    <p>OsamaTbaileh#4499</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="text-center pt-3">
+    <a class="footer-logo" href="#logo" target="_blank">
+        <img src="static/images/logo.png" width="90px" alt="Osama Tbaileh Logo" class="mb-2">
+    </a>
+    <div class="footer-icons mb-2">
+        <a href="mailto:osama.tb02@gmail.com" target="_blank" class="icon-link p-2 rounded"><i class="far fa-envelope"></i></a>
+        <a href="https://github.com/OsamaTbaileh/OsamaTbaileh" target="_blank" class="icon-link p-2 rounded"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/osamatbaileh" target="_blank" class="icon-link p-2 rounded"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p class="footer-text">&copy; 2023 Osama Tbaileh</p>
+</footer>
+
+
+
+<script src="static/js/script.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

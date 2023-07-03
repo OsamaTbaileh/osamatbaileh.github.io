@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+body {
+    transition: background-color 0.5s ease-in-out;
+}
+
+p {
+    font-family: 'Open Sans', cursive;
+    font-weight: lighter;
+}
+
+.section-header {
+    font-family: 'Open Sans', cursive;
+    font-size: 35px;
+    font-weight: 500;
+    color: #fabd69;
+}
+
+.header-quote {
+    font-size: 20px;
+}
+
+/* ############################# Dark Mode ############################# */
+
+.dark-mode body{
+    background-color: #121212;
+}
+
+.dark-mode p {
+    color: #fff;
+}
+
+.dark-mode .section-header {
+    color: #fff;
+    text-shadow: 0 0 7px purple, 0 0 10px purple, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff;
+}
+
+/* --------------------------------- NavBar ---------------------- */
+
+.nav-bar {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 960px;
+    padding: 10px;
+    z-index: 999999;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 350px !important;
+    border-radius: 50px 50px 50px 50px;
+    background: rgba(0,0,0,.2);
+    backdrop-filter: blur(15px);
+    border: 2px solid #fabd69;
+}
+
+.icon-circle {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    color: #23303e;
+    margin: 6px;
+}
+
+.icon-circle:hover {
+    background: rgba(0,0,0,.5);
+    color: #fabd69;
+}
+
+.icon-circle.active {
+    background-color: #23303e;
+    color: #fabd69;
+}
+
+/* ############################# Dark Mode ############################# */
+
+.dark-mode .nav-icons {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ca69fa;
+}
+
+.dark-mode .icon-circle {
+  color: #ffffff;
+}
+
+.dark-mode .icon-circle:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #ca69fa;
+}
+
+
+
+/* -------------------------- Logo & Slogan Section -------------------------- */
+
+.logo {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.logo .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.logo-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.logo h1 {
+    font-family: 'Marck Script', cursive;
+    font-size: 45px;
+    color: #23303e;
+    font-weight: bolder;
+}
+
+.logo h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #23303e;
+}
+
+.centered-img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: brightness(1.2);
+    filter: invert(0);
+    transition: filter 0.5s ease-in-out;
+}
+
+.logo .side-icons-bar {
+    position: absolute;
+    right: 1%;
+    top: 60%;
+}
+
+.logo .side-icons-bar a{
+    border: 2px solid #23303e;
+    padding: 10px;
+    text-decoration: none;
+    color: #23303e;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+.logo .side-icons-bar a:hover {
+    background-color: #23303e;
+    color: white;
+    transform: scale(1.2);
+}
+
+/* ############################# Dark Mode ############################# */
+
+.dark-mode .logo h1,.dark-mode .logo h3 {
+    color: white;
+    text-shadow: 0 0 7px purple, 0 0 10px purple, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff;
+}
+
+.dark-mode .centered-img {
+  filter: invert(1);
+}
+
+.dark-mode .logo .side-icons-bar a{
+    border: 2px solid #fff;
+    color: #fff;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+.dark-mode .logo .side-icons-bar a:hover {
+    background-color: #fff;
+    color: #ca69fa;
+    transform: scale(1.2);
+}
+
+
+/* Golden glowing button for the 'DOWNLOAD CV' button: */
+.golden-button {
+    text-decoration: none;
+    background: linear-gradient(to top right, #bb9158, #faf1b0);
+    padding: 7px 20px;
+    border-radius: 9px;
+    border-color: #bb9158;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    color: #23303e;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+.golden-button:hover {
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(to bottom left, #8d4800, #e5c970);
+    box-shadow: 0px 0px 20px 15px #bb9158;
+}
+/* dark-mode */
+.dark-mode .golden-button {
+    color: #fff;
+    background: linear-gradient(to top right, #5e008d, #c470e5);
+    border-color: #5e008d;
+}
+.dark-mode .golden-button:hover {
+    color: #23303e;
+    background: linear-gradient(to bottom left, #ca69fa, #f1b0fa);
+    box-shadow: 0px 0px 20px 15px #ca69fa;
+}
+
+
+/* background vidoe styles */
+.dark-video {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.light-video {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+/* dark-mode */
+.dark-mode .dark-video {
+    opacity: 1;
+}
+.dark-mode .light-video {
+    opacity: 0;
+}
+
+
+
+/* -------------------------- Profile Section -------------------------- */
+
+.profile-img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    filter: grayscale(100%);
+    border: 3px solid #fabd69 ;
+    transition: filter 0.5s ease, box-shadow 0.3s, transform 0.5s ease;
+    cursor: pointer;
+    transform-origin: center center;
+}
+
+.profile-img img:hover {
+    box-shadow: 0 0 20px #fabd69;
+    transform: scale(0.9);
+    filter: grayscale(0%);
+}
+
+.profile div p {
+    font-size: 1rem;
+    border: 2px solid #fabd69;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 40px;
+    padding: 20px
+}
+
+/* ############################# Dark Mode ############################# */
+
+.dark-mode .profile-img img {
+  border: 3px solid #ca69fa;  
+}
+
+.dark-mode .profile-img img:hover {
+    box-shadow: 0 0 20px #ca69fa;
+    filter: grayscale(0%);
+}
+
+.dark-mode .profile div p {
+    border: 2px solid #ca69fa;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
+    padding: 20px
+}
+
+
+/* -------------------------- Experience Section -------------------------- */
+
+
+.skill-item {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.star-rating i {
+    transition: color 2s;
+    transition: margin 0.5s ease-in-out; 
+}
+
+.skill-item:hover .star-rating i {
+    color: #fabd69;
+    margin-right: 3px;
+}
+
+.skill-item:hover {
+    background: rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.skill-item:hover .skill-name {
+    font-weight: bolder;
+}
+
+.dark-mode .skill-item img {
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.skills-section {
+    border: 2px solid #fabd69;
+    border-radius: 20px;
+    background-color: #ececec;
+}
+
+.fa-star{
+    color: #23303e;
+}
+
+.experience {
+    background-image: url("../images/desk-light.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ############################# Dark Mode ############################# */
+
+.dark-mode .skill-item:hover .star-rating i {
+  color: #ca69fa;
+}
+
+.dark-mode .skill-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .skills-section {
+    border: 2px solid #ca69fa;
+    background-color: #292929;
+}
+
+.dark-mode .fa-star{
+    color: #fff;
+}
+
+.dark-mode .skill-item .skill-name {
+    color: #fff;
+}
+
+.dark-mode .skill-item img {
+  background-color: #ececec;
+}
+
+.dark-mode .experience {
+    background-image: url("../images/desk-dark.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/* -------------------------- Projects Section -------------------------- */
+
+.card {
+    border: 2px solid #fabd69 !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    box-shadow: rgba(0, 0, 0, 1)  5px 5px 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transition: min-height 3s ease-out;
+    min-height: 100px;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.card:hover{
+    box-shadow: 0 0 23px #fabd69, 
+                0 0 23px #fabd69, 
+                0 0 23px #fabd69, 
+                0 0 23px #fabd69;
+    transform: scale(1.05);
+    min-height: 450px;
+    transition: min-height 0.5s ease-in;
+}
+
+.card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    z-index: 9999;
+}
+
+.card-background h5{
+    font-size: 2.5rem;
+    font-family: 'Open Sans', cursive;
+    color: white;
+    bottom: 5%;
+    z-index: -9;
+}
+
+.card:hover .card-background h5 {
+    font-size: 0%;
+    bottom: 5%;
+    z-index: -9;
+}
+
+.new-window-icon {
+    padding: 12px 12px 7px 7px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:0 0 0 5px;
+    right: 0px;
+    top: 0px;
+    z-index: 999999;
+    transition: transform 0.3s ease-in, transfrom 0.3s ease-out;
+}
+
+.card:hover .new-window-icon {
+    transform: scale(1.4);
+    color:#ffc370 
+}
+
+/* ############################# Dark Mode ############################# */
+
+.dark-mode .card {
+  border: 2px solid #ca69fa !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  box-shadow: rgb(255, 255, 255) 5px 5px 20px;
+}
+
+.dark-mode .card:hover{
+    box-shadow: 0 0 23px #ca69fa, 
+                0 0 23px #ca69fa, 
+                0 0 23px #ca69fa, 
+                0 0 23px #ca69fa;
+}
+
+.dark-mode .card:hover .new-window-icon {
+    color:#ca69fa 
+}
+
+
+
+/* -------------------------- Contact Section -------------------------- */
+
+.contact {
+    background-color: #e5e7e6;
+}
+
+.contact-card {
+    border: 2px solid #23303e;
+    transition: transform 0.5s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
+    text-decoration: none;
+    color:#23303e;
+}
+
+.contact-card p { 
+    margin: 5px;
+}
+
+.contact-card:hover {
+    background-color: #23303e;
+    color: white;
+    transform: scale(1.1);
+    border: 2px solid #fabd69;
+    box-shadow: 0 0 23px #fabd69 , 
+                0 0 23px #fabd69 , 
+                0 0 23px #fabd69 , 
+                0 0 23px #fabd69 ;
+}
+
+.contact-card:hover a {
+    color: white;
+}
+
+/* ############################# Dark Mode ############################# */
+
+.dark-mode .contact {
+    background-color: #262628;
+}
+
+.dark-mode .contact-card {
+    border: 2px solid #fff;
+    color:#fff;
+}
+
+.dark-mode .contact-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transform: scale(1.1);
+    border: 2px solid #ca69fa;
+    box-shadow: 0 0 23px #ca69fa, 
+                0 0 23px #ca69fa, 
+                0 0 23px #ca69fa, 
+                0 0 23px #ca69fa;
+}
+
+.dark-mode .contact-card:hover {
+    color: #fff;
+    text-shadow: 0 0 7px purple, 0 0 10px purple, 0 0 21px #fff;
+}
+
+/* -------------------------- Footer -------------------------- */
+
+footer {
+    background-image: linear-gradient(315deg, #e0d2b4 0%, #e2ac6b 74%);
+    padding-bottom: 70px;
+}
+
+.footer-icons a{
+    border: 2px solid #23303e;
+    padding: 10px;
+    text-decoration: none;
+    color: #23303e;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    background-color: #23303e;
+    color: white;
+    transform: scale(1.2);
+}
+
+.footer-logo img {
+  filter: invert(1);
+}
+
+/* ############################# Dark Mode ############################# */
+
+.dark-mode footer {
+    background-image: linear-gradient(315deg, #ac6be2 0%, purple 80%);
+}
+
+.dark-mode .footer-icons a {
+    border: 2px solid #fff;
+    color: #fff;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+.dark-mode .footer-icons a:hover {
+    background-color: #fff;
+    color: #ca69fa;
+    transform: scale(1.2);
+}
+
+.dark-mode .footer-logo img {
+    filter: brightness(5);
+}
+
+
+/* ########################################################################### */
+
+/* -------------------- Dark Mode Switch Slider in NavBar -------------------- */
+.toggle-slider {
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+
+.toggle-slider-checkbox {
+    display: none;
+}
+
+.toggle-slider-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.toggle-slider-label:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-slider-checkbox:checked + .toggle-slider-label {
+    background-color: #23303e;
+}
+
+.toggle-slider-checkbox:checked + .toggle-slider-label:before {
+    transform: translateX(30px);
+}
+
+/* Styling the sun and moon icons */
+.toggle-slider-label:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: #23303e;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-slider-checkbox:checked + .toggle-slider-label:before {
+    transform: translateX(30px);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-slider-label .fa-sun {
+    color: #fff;
+}
