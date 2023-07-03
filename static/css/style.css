@@ -91,17 +91,17 @@ p {
 /* ############################# Dark Mode ############################# */
 
 .dark-mode .nav-icons {
-  background: rgba(255, 255, 255, 0.2);
-  border: 2px solid #ca69fa;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #ca69fa;
 }
 
 .dark-mode .icon-circle {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .dark-mode .icon-circle:hover {
-  background: rgba(255, 255, 255, 0.5);
-  color: #ca69fa;
+    background: rgba(255, 255, 255, 0.5);
+    color: #ca69fa;
 }
 
 
@@ -113,7 +113,7 @@ p {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     overflow: hidden;
 }
 
@@ -189,7 +189,7 @@ p {
 }
 
 .dark-mode .centered-img {
-  filter: invert(1);
+    filter: invert(1);
 }
 
 .dark-mode .logo .side-icons-bar a{
